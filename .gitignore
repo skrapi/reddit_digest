@@ -1,0 +1,10 @@
+# Python
+secrets.py
+
+# Outputs
+*.html
+*.md
+!README.md
+
+# VS code
+.vscode/
