@@ -9,7 +9,6 @@ rope = "*"
 
 [packages]
 praw = "*"
-ipython = "*"
 grip = "*"
 
 [requires]
