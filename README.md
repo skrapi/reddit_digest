@@ -4,7 +4,7 @@ A python script which generates an HTML file with the top posts from your favour
 # How to use
 
 First you will need to get OUATH credentials from reddit. 
-1. Go to (Reddit Apps)[https://www.reddit.com/prefs/apps]
+1. Go to [Reddit Apps](https://www.reddit.com/prefs/apps)
 2. Create a new app.
 3. Use whatever name you want, and use https://www.reddit.com/ as your redirect url (it only really cares that you include the "https://" part)
 4. Install all the dependencies using pipenv install
