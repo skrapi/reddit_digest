@@ -32,11 +32,11 @@ class Markdown:
 reddit = praw.Reddit(client_id=REDDIT_OUATH_CLIENT_ID, client_secret=REDDIT_OUATH_CLIENT_SECRET, user_agent='my user agent')
 
 
-subreddits = ["rust", "elm", "ProgrammerHumor"]
+subreddits = ["rust", "elm", "ProgrammerHumor", "python"]
 
 NUM_OF_POSTS = 5
 
-with open('test.md', 'w') as file:
+with open('digest.md', 'w') as file:
     file.write(Markdown.h1("Reddit Digest"))
     for subreddit in subreddits:
         file.write(Markdown.h2(subreddit.capitalize()))
@@ -48,6 +48,6 @@ with open('test.md', 'w') as file:
                 file.write(Markdown.text(post.selftext))
             file.write("\n" + Markdown.link("link",post.url))
 
-grip.export(path="test.md", quiet=True)
+grip.export(path="digest.md", quiet=True)
 
 
