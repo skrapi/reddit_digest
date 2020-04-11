@@ -42,8 +42,8 @@ with open('test.md', 'w') as file:
         file.write(Markdown.h2(subreddit.capitalize()))
         for post in reddit.subreddit(subreddit).top('week', limit=NUM_OF_POSTS):
             file.write(Markdown.h3(post.title))
-            if (len(post.selftext) > 200):
-                file.write(Markdown.text(post.selftext[:200] + ' ...'))
+            if (len(post.selftext) > 400):
+                file.write(Markdown.text(post.selftext[:400] + ' ...'))
             else:
                 file.write(Markdown.text(post.selftext))
             file.write("\n" + Markdown.link("link",post.url))
